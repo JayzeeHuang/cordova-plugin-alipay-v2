@@ -11,7 +11,8 @@
 @end
 
 @implementation alipay
-
+@implementation AppDelegate (CordovaAlipay)
+    
 #pragma mark "API"
 - (void)pluginInitialize {
     CDVViewController *viewController = (CDVViewController *)self.viewController;
