@@ -5,8 +5,8 @@
 
 @interface alipay : CDVPlugin
 
-    @property NSString *appId;
-    @property NSString *callbackId;
+    @property (copy)NSString *appId;
+    @property (copy)NSString *callbackId;
 
 - (void)payment:(CDVInvokedUrlCommand*)command;
 
