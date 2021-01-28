@@ -16,7 +16,7 @@
 {
     self.callbackId = command.callbackId;
     NSString* orderString = [command.arguments objectAtIndex:0];
-    NSString* appScheme = [NSString stringWithFormat:@"ali%@", app_id];
+    NSString* appScheme = [NSString stringWithFormat:@"ali%@", self.app_id];
     [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
         CDVPluginResult* pluginResult;
         
@@ -34,7 +34,7 @@
 - (void)handleOpenURL:(NSNotification *)notification {
     NSURL* url = [notification object];
     
-    if ([url isKindOfClass:[NSURL class]] && [url.scheme isEqualToString:[NSString stringWithFormat:@"ali%@", app_id]])
+    if ([url isKindOfClass:[NSURL class]] && [url.scheme isEqualToString:[NSString stringWithFormat:@"ali%@", self.app_id]])
     {
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
             
