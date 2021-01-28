@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Alipay.com. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "APAppDelegate.h"
 #import <AlipaySDK/AlipaySDK.h>
 
 @implementation APAppDelegate{
