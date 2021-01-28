@@ -1,12 +1,10 @@
-
-#import <AlipaySDK/AlipaySDK.h>
 #import <Cordova/CDV.h>
 #import "AppDelegate.h"
 
 @interface alipay : CDVPlugin
 
-    @property (copy)NSString *appId;
-    @property (copy)NSString *callbackId;
+    @property (nonatomic, copy) NSString *appId;
+    @property (nonatomic, copy) NSString *callbackId;
 
 - (void)payment:(CDVInvokedUrlCommand*)command;
 
