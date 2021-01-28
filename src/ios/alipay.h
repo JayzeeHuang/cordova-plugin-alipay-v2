@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import <Cordova/CDV.h>
 #import <AlipaySDK/AlipaySDK.h>
-#import "AppDelegate.h"
+#import "APAppDelegate.h"
 
 @interface alipay : CDVPlugin
 
