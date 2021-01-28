@@ -1,5 +1,5 @@
 /********* alipay.m Cordova Plugin Implementation *******/
-
+#import "alipay.h"
 #import <Cordova/CDV.h>
 #import <AlipaySDK/AlipaySDK.h>
 
