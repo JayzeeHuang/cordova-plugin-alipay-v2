@@ -4,6 +4,8 @@
 
 @implementation alipay
 
+@synthesize appId, callbackId;
+
 #pragma mark "API"
 - (void)pluginInitialize {
     CDVViewController *viewController = (CDVViewController *)self.viewController;
