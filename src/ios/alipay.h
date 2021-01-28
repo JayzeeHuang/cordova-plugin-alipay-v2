@@ -1,5 +1,13 @@
+
+#import <AlipaySDK/AlipaySDK.h>
+#import <Cordova/CDV.h>
 #import "AppDelegate.h"
 
-@interface AppDelegate (CordovaAlipay)
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options;
+@interface alipay : CDVPlugin
+
+    @property NSString *appId;
+    @property NSString *callbackId;
+
+- (void)payment:(CDVInvokedUrlCommand*)command;
+
 @end
