@@ -62,7 +62,7 @@
 
         <header-file src="src/ios/alipay.h" />
         <source-file src="src/ios/alipay.m"/>
-        <header-file src="src/ios/AppDelegate.h" />
-        <header-file src="src/ios/AppDelegate.m" />
+        <header-file src="src/ios/APAppDelegate.h" />
+        <source-file src="src/ios/APAppDelegate.m" />
     </platform>
 </plugin>
