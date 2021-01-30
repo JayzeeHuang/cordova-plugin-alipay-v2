@@ -12,6 +12,14 @@ Ionic
 ionic cordova plugin add https://github.com/JayzeeHuang/cordova-plugin-alipay-v2.git --variable APP_ID=your AppId
 ```
 
+## Delete
+
+Make sure you remove the ios platform first before you deleting the plugin
+```
+ionic cordova platform rm ios
+ionic cordova plugin rm cordova-plugin-alipay-v2 --variable APP_ID=your AppId
+```
+
 ## Example code
 ionic3
 ``` js
